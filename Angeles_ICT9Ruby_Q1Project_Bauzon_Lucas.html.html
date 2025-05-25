@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over The Earth</title>
+        <style>
+        body {
+    margin: 0;
+    font-family: lexend;
+    background-color: #000; 
+    color: white; 
+    line-height: 1.6;
+}
+.header {
+    background-color: #111; 
+    color: white; 
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.insider-title {
+    font-size: 2em; 
+    color: white; 
+    margin-bottom: 10px; 
+    text-shadow: 1px 1px 2px #000; 
+}
+.insider-description {
+    font-size: 1.1em; 
+    color: white;
+    line-height: 1.8; 
+    max-width: 400px; 
+    margin-top: 5px; 
+}
+.nav {
+    background-color: #black; 
+    padding: 10px;
+    text-align: center;
+}
+.nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+.login-signup {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.login-signup a {
+    margin: 0 10px;
+    color: black;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.login-signup a:hover {
+    background-color: #0056b3;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sidebar {
+    width: 25%;
+    background-color:#0000; 
+    padding: 15px;
+    box-shadow: 0 0 10px #aaa;
+}
+.sidebar h2 {
+    font-size: 2em; 
+    color: white; 
+}
+.sidebar ul li a {
+    font-size: 20px; 
+    color: white; 
+    display: block;
+    padding: 5px 0; 
+}
+.main-content {
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 0 10px #aaa;
+    background-color: #333; 
+}
+h2 {
+    color: white; 
+    font-size: 2em; 
+    margin-bottom: 15px;
+}
+.product {
+    border: 1px solid #444; 
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #555; 
+}
+img {
+    width: 100%;
+    max-width: 200px;
+}
+.footer {
+    background-color: #111; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    clear: both;
+    bottom: 0;
+    width: 100%;
+}
+.column {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bestsellers {
+    background-color: #white; 
+    padding: 10px; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold; 
+    color: white; 
+    font-family: 'sans-serif;', sans-serif;
+    font-size: 1.5em; 
+    text-transform: uppercase; 
+}
+.bestsellers p {
+    font-size: 1em; 
+    color: white; 
+    margin-top: 5px; 
+    font-weight: normal; 
+}
+.form-container {
+    background-color: #444; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: white; 
+}
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #000; 
+}
+.form-container input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-container input[type="submit"]:hover {
+    background-color: #388e3c;
+}
+.checkbox-container {
+    text-align: left;
+    margin-top: 20px;
+}
+.checkbox-container input[type="checkbox"] {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+}
+.app-download {
+    text-align: center; 
+    margin: 20px 0;
+}
+.app-download h2 {
+    color: #ffffff; 
+    font-size: 1.5em;
+}
+.button-container {
+    margin-top: 10px;
+}
+.button-container button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #black;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button-container button:hover {
+    background-color: #white;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.product:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+    .header {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-image: url('motion 2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        background-attachment: fixed;
+        color: #whitesmoke; 
+        line-height: 1.6;
+    }
+    
+    .header {
+        background-color: #111; 
+        color:white; 
+        text-align: center;
+        padding: 20px;
+        position: relative;
+    }
+   
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Over the earth.png" alt="Over the Earth logo">
+        <h1 style="font-size: 40px;">Over the Earth Apperal </h1>
+        <p style="font-size: 20px;">Reinventing streetwear on a budget. </p>
+        <div class="insider-access">
+            <h2 class="insider-title"/h2>
+            <p class="insider-description"
+        div/>
+    </div>
+    <div class="nav">
+        <a href="#bestsellers"><b>Best Sellers</b></a>
+        <a href="#jeans"><b> Mens Jeans</b></a>
+        <a href="#jeans"><b>Womens Jeans</b></a>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <h2 style="font-size: 24px;">Categories</h2>
+            <ul>
+                <li><a href="#jeans">Mens Jeans</a></li>
+                <li><a href="#jeans">Womens Jeans</a></li>
+            </ul>
+            <div class="form-container">
+                <h2>Log in/Sign up</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    
+                    <div class="checkbox-container">
+                        <label><input type="checkbox" id="emailCheck" name="emailCheck"> I want to receive updates via email.</label>
+                        <label><input type="checkbox" id="terms" name="terms" required> I acknowledge the Terms and Conditions.</label>
+                    </div>
+
+                    <input type="submit" value="Sign Up">
+                    <input type="submit" value="Login">
+                </form>
+                <div style="text-align: center; margin-top: 20px;">
+                    
+
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="bestsellers" id="bestsellers">
+              
+            </div>
+            <h2 id="Mens" style="font-size: 24px;"> Mens</h2>
+            <div class="column">
+                <div class="product" style="background-color: #whitesmoke;">
+                    <img src="Baggy 1.jpg" alt="Baggy Wide Fit">
+                    <p><b>Baggy Denim Jeans</b> – ₱1,500 <br><b>Sizes: S,M,L,XL</b></p>
+                    <div class="button-container">
+                        <button onclick="addToCart('Baggy Wide Fit')">Add to Cart</button>
+                        <button onclick="buyNow('Baggy Wide Fit')">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product" style="background-color: #whitesmoke;">
+                    <img src="cargo pants.jpg" alt="Cargo Baggy">
+                    <p><b>Baggy Cargo Pants</b> – ₱800 <br><b>Sizes: S,M,L,XL</b></p>
+                    <div class="button-container">
+                        <button onclick="addToCart('Baggy Cargo Pants')">Add to Cart</button>
+                        <button onclick="buyNow('Baggy Cargo Pants')">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product" style="background-color: #whitesmoke;">
+                    <img src="Chrome Hearts.jpg" alt="Chrome Hearts">
+                    <p><b>Limited Edition Chrome Hearts Pants</b> – ₱2,000   <br><b>Sizes: S,M,L,XL</b></p>
+                    <div class="button-container">
+                        <button onclick="addToCart('Chrome Hearts Pants')">Add to Cart</button>
+                        <button onclick="buyNow('Chrome Hearts Pants')">Buy Now</button>
+                   
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="Womens" style="font-size: 24px;">Womens</h2>
+            <div class="column">
+                <div class="product" style="background-color: #whitesmoke;">
+                    <img src="womens 1.webp" >
+                    <p><b>Baggy Silk Pants</b> – ₱1,500 <br><b>Sizes: XS,S,M,L</b></p>
+                    <div class="button-container">
+                        <button onclick="addToCart('Baggy Silk Pants')">Add to Cart</button>
+                        <button onclick="buyNow('Baggy Silk Pants')">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product" style="background-color: #whitesmoke;">
+                    <img src="cargo y2k.jpg">
+                    <p><b>Y2K Style Cargos</b> – ₱1,000 <br><b>Sizes: XS,S,M,L</b></p>
+                    <div class="button-container">
+                        <button onclick="addToCart('Y2K Style Cargos')">Add to Cart</button>
+                        <button onclick="buyNow('Y2K Style Cargos')">Buy Now</button>
+                    </div>
+                </div>
+                <div class="product" style="background-color: #whitesmoke;">
+                    <img src="vintage jeans.webp">
+                    <p><b>Vintage Style Jeans</b> – ₱1,000 <br><b>Sizes: XS,S,M,L</b></p>
+                    <div class="button-container">
+                        <button onclick="addToCart('Vintage Style Jeans')">Add to Cart</button>
+                        <button onclick="buyNow('Vintage Style Jeans')">Buy Now</button>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+</div> 
+
+<div 
+/div>
+
+</body>
+
+     <div class="footer">
+        <h1>Just be you.</h1>
+    
+</div>
